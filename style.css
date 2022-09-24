@@ -1,0 +1,151 @@
+ 
+body {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #DCD0F5; 
+    border-radius: 5px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #0b5e0b; 
+    border-radius: 10px;
+  }
+
+
+  .wrap-banner h1{
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.wrap-banner p{
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.wrap-banner .wrap-banner-bg{
+    background-color: rgb(254, 255, 255);
+    padding: 80px;
+    border-radius: 100px;
+    opacity: 80%;
+}
+
+
+.wrap-banner{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+   height:75vh;
+ background-size:cover;
+  background-position:center;
+  opacity: 80%;
+}
+
+.founder{
+    background:url(/images/bg.jpg);
+    height:75vh;
+    display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    margin-left: 200px;
+}
+
+.location-text{
+    width: 40%;
+}
+
+.location-img{
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .location {
+        flex-direction: column;
+    }
+
+    .location-img{
+        width: 100%;
+    }
+}
+
+
+.footer{
+    position: static;
+    background-color: #0b5e0b;
+    height: 150px;
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 40px;
+    
+  }
+  
+  .footer-content{
+      text-align: center;
+      font-weight: bold;
+      color:white;
+  }
+
+  .fun-facts{
+    padding: 50px;
+
+  }
+
+  .facts-list{
+    background-color: #0b5e0b;
+    margin-top: 30px;
+    width: 1000px;
+    margin-left: 250px;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+  }
+
+  .list-item{
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  .history{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .culture{
+    padding: 40px;
+    margin-bottom:800px ;
+  }
+
+  .contentColumn {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .contentColumn {
+      width: 100%;
+    }
+ 
+  }
