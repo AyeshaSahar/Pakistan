@@ -22,6 +22,13 @@ body {
     border-radius: 10px;
   }
 
+  .card{
+    padding: 2rem;
+    border: 1px solid #0b5e0b;
+    border-radius: 30px;
+    box-shadow: 10px 7px 0 #0b5e0b;
+  }
+
 
   .wrap-banner h1{
     color: #000000;
@@ -39,10 +46,14 @@ body {
 }
 
 .wrap-banner .wrap-banner-bg{
-    background-color: rgb(254, 255, 255);
-    padding: 80px;
-    border-radius: 100px;
-    opacity: 80%;
+  padding: 80px;
+  border-radius: 100px;
+  background: rgba( 255, 255, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 100px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 
@@ -84,18 +95,23 @@ body {
 @media screen and (max-width: 480px) {
     .location {
         flex-direction: column;
+        margin-left: 0px;
     }
 
     .location-img{
-        width: 100%;
+        margin-left: 0px;
     }
+    
+.location-text{
+  width: 100%;
+}
 }
 
 
 .footer{
     position: static;
     background-color: #0b5e0b;
-    height: 150px;
+    height: 200px;
     width: 100%;
     padding-top: 40px;
     margin-top: 40px;
@@ -109,43 +125,29 @@ body {
   }
 
   .fun-facts{
-    padding: 50px;
+    padding: 60px;
 
-  }
-
-  .facts-list{
-    background-color: #0b5e0b;
-    margin-top: 30px;
-    width: 1000px;
-    margin-left: 250px;
-    padding: 20px;
-    border-radius: 30px;
-    color: white;
   }
 
   .list-item{
-    padding: 10px;
+    padding: 5px;
     list-style-type: none;
+    color: white;
   }
 
   .history{
     margin-left: 200px;
     margin-right: 200px;
   }
-  .culture{
+
+  
+@media screen and (max-width: 480px) {
+  .history{
+    margin-left: 0px;
+    width: 100%;
     padding: 40px;
-    margin-bottom:800px ;
   }
 
-  .contentColumn {
-    float: left;
-    width: 33.33%;
-    padding: 20px;
-  }
 
-  @media screen and (max-width: 480px) {
-    .contentColumn {
-      width: 100%;
-    }
- 
-  }
+}
+
